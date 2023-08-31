@@ -1,4 +1,5 @@
 <img width="462" alt="Ooga Booga" src="https://github.com/mhkamal15/Ooga-Booga-Rebirth/assets/120230397/a81aa055-cb20-4750-97e6-254e3a4085b4">
+
 # Ooga-Booga-Rebirth
 Updated version of the Ooga Booga virus.
 
