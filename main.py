@@ -35,35 +35,32 @@ while True:
                 shutil.copyfile("OogaBooga.txt", f"Desktop/OogaBooga_{i}.txt")
                 i += 1
 
-            
-            os.system("attrib +h main.py")
-
-           
-            shutil.copyfile("main.py", "main_copy.py")
-
-            
-            os.system("attrib +h main_copy.py")
+            # Make the main.py and main_copy.py files undeletable
+            try:
+                os.system("attrib +h main.py")
+                os.system("attrib +h main_copy.py")
+            except:
+                print("Error: Unable to make files undeletable.")
 
             # Print message
             print("""The texts of Ooga Booga have been summoned by our lord. Good luck noble warrior. Text file copied. Ooga Booga files created. Script made undeletable. Script copied.""")
+            break
 
     # Disable
     elif option == "disable":
         # Delete all files
-        os.remove("main.py")
-        os.remove("main_copy.py")
-        i = 0
-        while i >= 0:
-            try:
+        try:
+            os.remove("main.py")
+            os.remove("main_copy.py")
+            i = 0
+            while i >= 0:
                 os.remove(f"Desktop/OogaBooga_{i}.txt")
                 i += 1
-            except:
-                break
-        os.remove("Desktop/OogaBooga.txt")
+            os.remove("Desktop/OogaBooga.txt")
+        except:
+            print("Error: Unable to delete files.")
         break
 
     # Invalid option
     else:
         print("Invalid option. Please try again.")
-
-
