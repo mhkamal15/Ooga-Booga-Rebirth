@@ -1,7 +1,7 @@
 <img width="462" alt="Ooga Booga" src="https://github.com/mhkamal15/Ooga-Booga-Rebirth/assets/120230397/a81aa055-cb20-4750-97e6-254e3a4085b4">
 
 # Ooga-Booga-Rebirth
-Updated version of the Ooga Booga virus.
+Updated version of my childhood Ooga Booga virus.
 
 # Pen-Testing Virus Script
 This script is designed for pen-testing and prank purposes only. It is meant to be used on systems, networks, and applications where explicit permission has been granted.
